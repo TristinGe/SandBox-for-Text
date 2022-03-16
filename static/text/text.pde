@@ -1,6 +1,7 @@
 String title = "Wahoo!";
 PFont titleFont;
 float titlex, titley, titlexwidth, titlexheight;
+color resetDefaultInk=#FFFFFF, purple=#9503FF;
 //
 //Display Geometry
 size(500,600); //fullScreen(); displayWidth, displayheight
@@ -20,9 +21,9 @@ titleFont = createFont("Arial", 50); //Verify font exists
 //Laying out thr text space and typographical features
 rect(titlex, titley, titlexwidth, titlexheight);
 //DrawingText
-fill(); //Ink, hexdecimal copied from Colour Selector
-textAlign(); //Align Horiztonal, vertical, see Processing.org / Referece
+fill(purple); //Ink, hexdecimal copied from Colour Selector
+textAlign(CENTER, CENTER); //Align Horiztonal, vertical, see Processing.org / Referece
 //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-textFont(); //Change the number until it fits, largest text
-text();
+textFont(titleFont, 10); //Change the number until it fits, largest text
+text(title, titlex, titley, titlexwidth, titlexheight);
 fill(resetDefaultInk);

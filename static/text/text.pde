@@ -24,6 +24,6 @@ rect(titlex, titley, titlexwidth, titlexheight);
 fill(purple); //Ink, hexdecimal copied from Colour Selector
 textAlign(CENTER, CENTER); //Align Horiztonal, vertical, see Processing.org / Referece
 //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-textFont(titleFont, 10); //Change the number until it fits, largest text
+textFont(titleFont, 53.2); //Change the number until it fits, largest text
 text(title, titlex, titley, titlexwidth, titlexheight);
 fill(resetDefaultInk);
